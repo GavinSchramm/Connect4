@@ -1,7 +1,47 @@
 <!doctype html>
+
 <html lang="en" data-bs-theme="auto">
+
     <script src="Connect.js"></script>
+
     <link rel="stylesheet" href="Connect.css">
+
     <title>Connect 4</title>
 
+    <head></head>
+
+<!-- The start screen -->
+    <body>
+        <div class="leftSide">
+            <div class="slidecontainer">
+                <label for="myRange">Red</label>
+                <input type="range" min="0" max="255" value="128" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+                <output id="redValue">128</output> <br>
+
+                <label for="myRange">Green</label>
+                <input type="range" min="0" max="255" value="128" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+                <output id="greenValue">128</output> <br>
+
+                <label for="myRange">Blue</label>
+                <input type="range" min="0" max="255" value="128" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+                <output id="blueValue">128</output> <br>
+
+                <button onclick="p1Color()" id="p1Color">Player 1 Color</button>
+                <button onclick="p2Color()" id="p2Color">Player 2 Color</button>
+            </div>
+        </div>
+        <div class="rightSide">
+            <div>
+            <p>P1 Color</p>
+            <button id="p1ColorShow"></button>
+
+            <p>P2 Color</p>
+            <button id="p2ColorShow"></button>
+            </div>
+        </div>
+        <button id="start" onclick="startGame()">START</button>
+    </body>
+
+<!-- The Game itself -->
+    
 </html>

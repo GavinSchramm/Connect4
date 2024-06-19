@@ -1,3 +1,79 @@
+/* The start screen */
 html {
     background-color: rgb(160, 160, 160);
 }
+
+.leftSide {
+    display: flex;
+    position: absolute;
+    left: 10px;
+    background-color: red;
+    width: 49%;
+}
+
+.rightSide {
+    display: flex;
+    position: absolute;
+    right: 10px;
+    background-color: yellow;
+    width: 49%;
+}
+
+#myRange{
+    margin-bottom: 30px;
+}
+
+#redValue, #greenValue, #blueValue {
+    display: none;
+}
+
+.slidecontainer {
+    background-color: green;
+    width: 100%;
+}
+
+.slider {
+    width: 100%;
+    outline: none;
+    opacity: 0.7;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+#p1Color {
+    position: absolute;
+    left:0vw;
+}
+
+#p2Color {
+    position: absolute;
+    right:0vw;
+}
+
+#p1ColorShow {
+    background-color: rgb(255,0,0);
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#p2ColorShow {
+    background-color: rgb(0,255,0);
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+}
+
+#start {
+    display: none;
+    position: absolute;
+    bottom: 10px;
+    left: 43%;
+    font-size:50px;
+}
+
+/* The game itself */
