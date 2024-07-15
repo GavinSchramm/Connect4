@@ -3,33 +3,37 @@ html {
     background-color: rgb(160, 160, 160);
 }
 
+#head {
+    font-family: 'Comic Sans', 'Times New Roman';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+
 .leftSide {
     display: flex;
     position: absolute;
     left: 10px;
-    background-color: red;
-    width: 49%;
+    width: 50%;
 }
 
 .rightSide {
     display: flex;
     position: absolute;
     right: 10px;
-    background-color: yellow;
-    width: 49%;
-}
-
-#myRange{
-    margin-bottom: 30px;
+    width: 50%;
 }
 
 #redValue, #greenValue, #blueValue {
     display: none;
 }
 
+#myRange{
+    margin-bottom: 30px;
+}
+
 .slidecontainer {
-    background-color: green;
-    width: 100%;
+    width: 90%;
 }
 
 .slider {
@@ -51,7 +55,12 @@ html {
 
 #p2Color {
     position: absolute;
-    right:0vw;
+    right:5vw;
+}
+
+#randomC {
+    position: absolute;
+    right: 45%;
 }
 
 #p1ColorShow {
@@ -77,3 +86,64 @@ html {
 }
 
 /* The game itself */
+.gameScreen {
+    display: flex;
+}
+
+.gameLeft {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 25%;
+}
+
+.gameMiddle {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 50%;
+}
+
+.gameRight {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 25%;
+}
+
+table{
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(85, 210, 255);
+}
+
+td {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-color: rgb(85, 210, 255);
+}
+
+#p1GameColor {
+    background-color: rgb(255,0,0);
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+#p2GameColor {
+    background-color: rgb(0,255,0);
+    width: 100px;
+    height: 100px;
+    margin-left: 20px;
+    align-self: center;
+}
+
+#player1Title {
+    align-self: center;
+    font-size: large;
+}
+
+#player2Title {
+    align-self: center;
+    font-size: large;
+}

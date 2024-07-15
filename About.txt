@@ -1,3 +1,12 @@
 Hi! I'm Gavin Schramm and I am a student at Doane University in Crete Nebraska. I will graduate in May of 2026 with a Software Engineering major and a Data Analytics and Leadership Studies double minor. At Doane I am a part of the Programming Team, the Hansen Leadership Program, an Ambassador and build scene sets in the Theatre department.
 
 This project is me trying to make a connect 4 game. Before starting I am not for sure how to go about making this. What I do want to add is a custom color for both players, default being red and yellow but have a color picker that lets the players change what color to be. It will have a start screen with 1. the player colors and a way to pick a color and 2. a start button to begin the game, locking the color in. When the start button is pressed, the next screen is the game and it will show the board, the two colors, and who's turn it is to go. The moment a person gets 4 in a row, the game will end with text that says "Player 1 Won" with that player's color being the text color, and the same for player 2. This is how I plan for it to go but it may change as I start. 
+
+Start Screen Made - Commit
+This is a rough version of the start screen I was trying to make, it has three sliders, one for each color and two buttons, one for player one and one for player 2. Once both buttons are pushed for the colors, the start button appears and that will lock the colors in and pull up the game board that is not done yet
+
+Next Commit Title - Commit
+Made a random color button which picks random values for red, green, and blue values and assigns it to the player colors. 
+
+Game Screen Design - Commit
+Got the gameboard to show up with some buttons to place the piece in the column with a placeholder function. Got the gameboard designed with the player colors on the left and right side of the screen. For the javascript, I still need to design the place peice button and then the logic to check if a player has won the game.

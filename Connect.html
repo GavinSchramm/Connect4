@@ -8,29 +8,37 @@
 
     <title>Connect 4</title>
 
-    <head></head>
+    <head>
+        <h1 id="head">Connect 4</h1>
+    </head>
 
 <!-- The start screen -->
     <body>
-        <div class="leftSide">
-            <div class="slidecontainer">
-                <label for="myRange">Red</label>
-                <input type="range" min="0" max="255" value="128" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
-                <output id="redValue">128</output> <br>
-
-                <label for="myRange">Green</label>
-                <input type="range" min="0" max="255" value="128" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+        <div class="leftSide" id="leftSide">
+            <div class="slidecontainer" id="slidecontainer">
+                <!-- Red slider -->
+                <label for="myRange" id="label">Red</label>
+                <input type="range" min="0" max="255" value="128" class="slider" id="myRangeR" oninput="this.nextElementSibling.value = this.value">
+                <output id="redValue">128</output> <br>                
+                
+                <!-- Green slider -->
+                <label for="myRange" id="label">Green</label>
+                <input type="range" min="0" max="255" value="128" class="slider" id="myRangeG" oninput="this.nextElementSibling.value = this.value">
                 <output id="greenValue">128</output> <br>
 
-                <label for="myRange">Blue</label>
-                <input type="range" min="0" max="255" value="128" class="slider" id="myRange" oninput="this.nextElementSibling.value = this.value">
+                <!-- Blue slider -->
+                <label for="myRange" id="label">Blue</label>
+                <input type="range" min="0" max="255" value="128" class="slider" id="myRangeB" oninput="this.nextElementSibling.value = this.value">
                 <output id="blueValue">128</output> <br>
 
                 <button onclick="p1Color()" id="p1Color">Player 1 Color</button>
+                <button onclick="randomC()" id="randomC">Random Color</button>
                 <button onclick="p2Color()" id="p2Color">Player 2 Color</button>
             </div>
         </div>
-        <div class="rightSide">
+        <div class="rightSide" id="rightSide">
+            <!-- Show the color that was picked -->
+            <!-- *NOTE* The buttons are just for show, they have no function when clicked -->
             <div>
             <p>P1 Color</p>
             <button id="p1ColorShow"></button>
@@ -40,8 +48,85 @@
             </div>
         </div>
         <button id="start" onclick="startGame()">START</button>
-    </body>
 
 <!-- The Game itself -->
-    
+        <div class="gameScreen">
+            <div class="gameLeft" style="display: none;" id="gameLeft">
+                <p id="player1Title">Player 1 Turn</p>
+                <button id="p1GameColor"></button>
+            </div>
+            <!-- The table is the game board itself, it has nothing inside but to show who has what square, it changes the background color of the individual cell -->
+            <div class="gameMiddle" style="display: none;" id="gameMiddle">
+                <table id="gameBoard">
+                    <tr>
+                        <td><button onclick="placePiece(1)">Place Piece</button></td>
+                        <td><button onclick="placePiece(2)">Place Piece</button></td>
+                        <td><button onclick="placePiece(3)">Place Piece</button></td>
+                        <td><button onclick="placePiece(4)">Place Piece</button></td>
+                        <td><button onclick="placePiece(5)">Place Piece</button></td>
+                        <td><button onclick="placePiece(6)">Place Piece</button></td>
+                        <td><button onclick="placePiece(7)">Place Piece</button></td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>Test3</td>
+                        <td>Test4</td>
+                        <td>Test5</td>
+                        <td>Test6</td>
+                        <td>Test7</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>Test3</td>
+                        <td>Test4</td>
+                        <td>Test5</td>
+                        <td>Test6</td>
+                        <td>Test7</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>Test3</td>
+                        <td>Test4</td>
+                        <td>Test5</td>
+                        <td>Test6</td>
+                        <td>Test7</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>Test3</td>
+                        <td>Test4</td>
+                        <td>Test5</td>
+                        <td>Test6</td>
+                        <td>Test7</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>Test3</td>
+                        <td>Test4</td>
+                        <td>Test5</td>
+                        <td>Test6</td>
+                        <td>Test7</td>
+                    </tr>
+                    <tr>
+                        <td>Test</td>
+                        <td>Test2</td>
+                        <td>Test3</td>
+                        <td>Test4</td>
+                        <td>Test5</td>
+                        <td>Test6</td>
+                        <td>Test7</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="gameRight" style="display: none;" id="gameRight">
+                <p id="player2Title">Player 2</p>
+                <button id="p2GameColor"></button>
+            </div>
+        </div>
+    </body>
 </html>
