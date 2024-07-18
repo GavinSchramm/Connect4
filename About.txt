@@ -10,3 +10,6 @@ Made a random color button which picks random values for red, green, and blue va
 
 Game Screen Design - Commit
 Got the gameboard to show up with some buttons to place the piece in the column with a placeholder function. Got the gameboard designed with the player colors on the left and right side of the screen. For the javascript, I still need to design the place peice button and then the logic to check if a player has won the game.
+
+Working Game - Commit
+The game is up and working, with custom colors for each player and a random color button. After each piece is pressed, it checks the board to see if 4 peices are in a row in any direction. If no one wins, there is a "No Winner" alert to show that no one won. To play again, you have to refresh the page and pick new colors. If I decided to continue this project, I would add a play again button when someone wins that keeps the same colors or a pick new color button which would take you back to the start to pick new colors. 
